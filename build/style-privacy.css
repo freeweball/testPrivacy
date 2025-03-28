@@ -1,0 +1,1504 @@
+@font-face {
+    font-family: 'Bubbleboddy Neue Trial';
+    src: url('../fonts/bn-regular.woff') format('woff');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Bubbleboddy Neue Trial';
+    src: url('../fonts/bn-bold.woff') format('woff');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: 'Intro Bold';
+    src: url('../fonts/intro-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Intro Black';
+    src: url('../fonts/intro-black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Intro Regular';
+    src: url('../fonts/intro-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    box-sizing: border-box
+  }
+  img {
+    -webkit-backface-visibility: hidden;
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    filter: blur(0);
+    -webkit-filter: blur(0);
+  }
+  html {
+    position: relative;
+    font-family: 'Intro Regular', Arial, Tahoma, sans-serif;
+    font-size: 21px;
+    background: url('./img/bg-main.png') repeat-x 0 -100%;
+  }
+  body {
+    position: relative;
+    font-family: 'Intro Regular', Arial, Tahoma, sans-serif;
+    font-size: 21px;
+    background: url('./img/bg-main.png') repeat-x 0 -100%;
+  }
+  .page-wrapper {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 0 100px #97d3e4;
+  }
+  a {
+    /* text-decoration: none; */
+    color: inherit;
+  }
+
+  div.rel {
+    position: relative;
+  }
+  section {
+    position: relative;
+    background-position: 50% 0;
+    text-align: center;
+  }
+  .clear {
+    clear: both;
+  }
+  .sep {
+    display: none;
+  }
+  .only-mob {
+    display: none !important;
+  }
+  .only-desc {
+    display: block !important;
+  }
+  ul.reset li {
+    display: block;
+    float: left;
+  }
+  ul.social-icons li {
+    display: inline-block;
+    margin: 0 1px;
+  }
+  ul.social-icons li a {
+    display: block;
+    background: url('./img/social-icons.png');
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 3px;
+    transition: transform 0.25s ease;
+  }
+  ul.social-icons li a:hover {
+    transform: scale(1.1);
+  }
+  ul.social-icons li a.vk {
+    background-position: -60px 0;
+  }
+  ul.social-icons li a.vk:hover {
+    background-position: 0 0;
+  }
+  ul.social-icons li a.fb {
+    background-position: -60px -60px;
+  }
+  ul.social-icons li a.fb:hover {
+    background-position: 0 -60px;
+  }
+  ul.social-icons li a.lin {
+    background-position: -60px -120px;
+  }
+  ul.social-icons li a.lin:hover {
+    background-position: 0 -120px;
+  }
+  ul.social-icons li a.ok {
+    background-position: -60px -180px;
+  }
+  ul.social-icons li a.ok:hover {
+    background-position: 0 -180px;
+  }
+  ul.social-icons li a.inst {
+    background-position: -60px -240px;
+  }
+  ul.social-icons li a.inst:hover {
+    background-position: 0 -240px;
+  }
+  ul.social-icons li a.am {
+    background-position: -60px -300px;
+  }
+  ul.social-icons li a.am:hover {
+    background-position: 0 -300px;
+  }
+  header {
+    width: 100%;
+    height: 125px;
+    display: block;
+    background: #fff url('./img/header-bg.png') repeat-x;
+  }
+  header a.logo {
+    float: left;
+    width: 200px;
+    max-width: 200px;
+    margin: 20px 0 0 50px;
+  }
+  header a.logo img {
+    width: 100%;
+    height: auto;
+  }
+  header a.mobile-menu-btn {
+    display: none;
+    float: right;
+  }
+  header a.mobile-menu-btn img {
+    width: 100%;
+    height: auto;
+  }
+  header a.mobile-menu-btn .open {
+    display: block;
+  }
+  header a.mobile-menu-btn .close {
+    display: none;
+  }
+  header .buttons {
+    float: right;
+  }
+  header .buttons ul.lang {
+    font-family: 'Intro Bold', sans-serif;
+    float: right;
+    margin: 37px 50px 0 0;
+    height: 44px;
+  }
+  header .buttons ul.lang li a {
+    display: block;
+    font-size: 0.9em;
+    background: #c2d5d9;
+    color: #92a7ac;
+    height: 44px;
+    width: 60px;
+    text-align: center;
+    line-height: 45px;
+    vertical-align: bottom;
+    z-index: 99;
+  }
+  header .buttons ul.lang li a.left {
+    border-radius: 5px 0 0 5px;
+  }
+  header .buttons ul.lang li a.right {
+    border-radius: 0 5px 5px 0;
+  }
+  header .buttons ul.lang li a.active {
+    background: #e1742a;
+    color: #fff;
+  }
+  header .buttons ul.menu {
+    font-family: 'Bubbleboddy Neue Trial', Arial, Tahoma, sans-serif;
+    float: right;
+    margin: 30px 20px 0 0;
+  }
+  header .buttons ul.menu li {
+    margin-right: 5px;
+  }
+  header .buttons ul.menu li a {
+    height: 20px;
+    display: block;
+    color: #3e6372;
+    font-size: 1em;
+    padding: 20px 20px;
+    transition: 0.2s;
+  }
+  header .buttons ul.menu li a:active {
+    height: 20px;
+    display: block;
+    color: #3e6372;
+    font-size: 1em;
+    padding: 20px 20px;
+  }
+  header .buttons ul.menu li a i {
+    font-style: normal;
+    overflow: hidden;
+    height: 0.3em;
+    width: 0.3em;
+    border-radius: 50%;
+    background-color: transparent;
+    vertical-align: top;
+    margin-top: 0.39em;
+    margin-right: 0.3em;
+    display: none;
+  }
+  header .buttons ul.menu li a:hover {
+    color: #e1742a;
+    background: rgba(39, 46, 47, 0.1);
+  }
+  header .buttons ul.menu li a.active {
+    color: #e1742a;
+  }
+  header .buttons ul.menu li a.active i {
+    display: inline-block;
+    background-color: #e1742a;
+  }
+
+  .section-header {
+    display: inline-block;
+    height: 115px;
+    text-align: center;
+    width: 497px;
+    background: url('./img/header-normal.png') 0 0 no-repeat;
+    padding-top: 37px;
+  }
+  .section-header.orange {
+    padding-top: 27px;
+    padding-right: 30px;
+    background: url('./img/header-orange.png') 20px 0 no-repeat;
+  }
+  .section-header.white {
+    color: #2fb4e0;
+    background: url('./img/header-white.png') 0 0 no-repeat;
+  }
+  section.about {
+    width: 100%;
+    padding: 50px 0 100px 0;
+    background: url('./img/about-bg-slice.png') 50% 100% no-repeat;
+    text-align: center;
+    z-index: 60;
+  }
+  section.about .yellow-heart {
+    background: url('./img/yellow-heart.png');
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 357px;
+    height: 329px;
+    z-index: 10;
+  }
+  section.about .about-wrapper {
+    max-width: 1440px;
+    height: 100%;
+    padding: 0 40px;
+    margin: 33px auto 0;
+  }
+  section.about .about-wrapper .about-columns {
+    float: left;
+  }
+  section.about .about-wrapper .about-photos {
+    max-width: 875px;
+    width: 58%;
+    height: 750px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 50px 0 #dedddd;
+    padding: 0.5%;
+  }
+  section.about .about-wrapper .about-photos .about-photos-wrapper {
+    height: 100%;
+  }
+  section.about .about-wrapper .about-photos .about-photos-wrapper .photo {
+    float: left;
+    margin: 0.5%;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  section.about .about-wrapper .about-photos .about-photos-wrapper .photo img {
+    position: absolute;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  }
+  section.about .about-wrapper .about-photos .about-photos-wrapper .photo.big {
+    width: 49%;
+    height: 49%;
+  }
+  section.about .about-wrapper .about-photos .about-photos-wrapper .photo.small {
+    width: 49%;
+    height: 49%;
+  }
+  section.about .about-wrapper .about-photos .about-photos-wrapper .photo.small:nth-child(1) {
+    margin: 0 1% 1% 0;
+  }
+  section.about .about-wrapper .about-photos .about-photos-wrapper .photo.small:nth-child(2) {
+    margin: 0 0 1% 1%;
+  }
+  section.about .about-wrapper .about-photos .about-photos-wrapper .photo.small:nth-child(3) {
+    margin: 1% 1% 0 0;
+  }
+  section.about .about-wrapper .about-photos .about-photos-wrapper .photo.small:nth-child(4) {
+    margin: 1% 0 0 1%;
+  }
+  section.about .about-wrapper .about-text {
+    font: 1.2em 'Intro Regular', Arial, Tahoma, sans-serif;
+    color: #828283;
+    margin: 50px 0 30px 50px;
+    width: 35%;
+    max-width: 500px;
+  }
+  section.about .about-wrapper .about-text span {
+    display: block;
+    text-align: center;
+    text-indent: 1em;
+    margin-bottom: 1.5em;
+  }
+  section.about .girl-and-baloon {
+    background: url('./img/girl-and-baloon.png');
+    position: absolute;
+    right: 30px;
+    bottom: -170px;
+    width: 482px;
+    height: 581px;
+    z-index: 11;
+  }
+  section.about .wafer {
+    background: url('./img/wafer.png');
+    position: absolute;
+    left: 0;
+    bottom: -180px;
+    width: 289px;
+    height: 287px;
+    z-index: 11;
+  }
+
+  section.contacts {
+    z-index: 50;
+    margin-top: -122px;
+    width: 100%;
+    background: url('./img/contacts-bg-slice.png') 50% 0;
+    padding-top: 10px;
+  }
+  section.contacts .contacts-wrapper {
+    max-width: 1440px;
+    margin: 33px auto 0;
+    padding: 0 0 100px 0;
+    height: auto;
+  }
+  section.contacts .contacts-wrapper .contacts-element {
+    width: 27%;
+    float: left;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 395px;
+    position: relative;
+  }
+  section.contacts .contacts-wrapper .contacts-element .contacts-element-bg {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 120%;
+    height: 140%;
+    left: -999999px;
+    right: -999999px;
+    margin: -100px auto 0 auto;
+  }
+  section.contacts .contacts-wrapper .contacts-element .contacts-element-bg img {
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+    opacity: 0;
+    transition: 0.2s;
+  }
+  section.contacts .contacts-wrapper .contacts-element .contacts-element-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+  }
+  section.contacts .contacts-wrapper .contacts-element:hover .contacts-element-bg img {
+    /* display: block; */
+    opacity: 1;
+  }
+  section.contacts .contacts-wrapper .contacts-element .contacts-element-icon {
+    height: 140px;
+  }
+  section.contacts .contacts-wrapper .contacts-element .contacts-element-header {
+    color: #fff;
+    font-family: 'Bubbleboddy Neue Trial', sans-serif;
+  }
+  section.contacts .contacts-wrapper .contacts-element .contacts-element-mail {
+    margin-top: 25px;
+  }
+  section.contacts .contacts-wrapper .contacts-element .contacts-element-mail a {
+    display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(22, 94, 115, 0.3);
+    color: #165e73;
+    transition: 0.2s;
+  }
+  section.contacts .contacts-wrapper .contacts-element .contacts-element-mail a:hover {
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  section.contacts .contacts-wrapper .contacts-element .contacts-element-info {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin-top: 25px;
+    padding: 0 20px;
+    text-align: center;
+    color: #038ab1;
+  }
+  section.contacts .contacts-full-wrapper .footer {
+    margin-top: 120px;
+    padding: 0 0 20px 0;
+  }
+  section.contacts .contacts-full-wrapper .footer .footer-wrapper {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  section.contacts .contacts-full-wrapper .footer .footer-wrapper p {
+    color: #608792;
+    font: 0.8em 'Bubbleboddy Neue Trial', Arial, Tahoma, sans-serif;
+  }
+  section.contacts .contacts-full-wrapper .footer .footer-wrapper p span {
+    margin: 0 10px;
+  }
+  section.contacts .contacts-full-wrapper .footer .footer-wrapper p span a {
+    text-decoration: underline;
+  }
+  section.contacts .contacts-full-wrapper .footer .footer-wrapper p.white {
+    color: #fff;
+  }
+  section.contacts .contacts-full-wrapper .footer .footer-wrapper ul {
+    margin-top: 20px;
+  }
+  section.contacts .contacts-full-wrapper .footer .footer-wrapper ul li {
+    margin: 0 5px;
+  }
+
+
+
+  
+ 
+
+
+  
+ 
+  .candy {
+    display: none;
+    width: 176px;
+    height: 86px;
+    position: absolute;
+    right: 250px;
+    bottom: -10px;
+    z-index: 90;
+    background: url('./img/candy.png');
+  }
+  .girl {
+    position: absolute;
+    background: url('./img/girl-bottom.png');
+    width: 260px;
+    height: 260px;
+    left: 60px;
+    bottom: 0;
+    z-index: 90;
+  }
+  .pswp__top-bar .pswp__counter {
+    font-size: 1em;
+  }
+  .pswp__caption .pswp__caption__center {
+    font-size: 1em;
+    text-align: center;
+    padding: 20px;
+  }
+  @media only screen and (min-width: 1921px) {
+    header {
+      background-size: 100% auto;
+    }
+    section.banner {
+      background-size: 100% auto;
+    }
+    section.about {
+      background-size: 100% auto;
+    }
+    section.games {
+      background-size: 100% auto;
+    }
+    section.contacts {
+      background-size: 100% auto;
+    }
+    section.footer {
+      bottom: 0;
+    }
+    section.footer .footer-wrapper ul.social-icons {
+      margin-top: 8px;
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    header ul.menu {
+      margin-right: 25px;
+    }
+    header ul.menu li a {
+      font-size: 0.95em;
+      padding: 15px 5px;
+    }
+    section.banner .banner-text {
+      top: 280px;
+    }
+    section.banner .banner-text a.play {
+      padding: 15px 50px;
+    }
+    section.about .yellow-heart {
+      top: -30px;
+      right: -60px;
+    }
+    section.about .wafer {
+      left: -100px;
+      bottom: -180px;
+    }
+    section.games .games-wrapper ul.social-icons li {
+      margin-right: 30px;
+    }
+    section.contacts .contacts-wrapper .contacts-element {
+      width: 30%;
+      margin: 0 1.5%;
+    }
+    .girl {
+      left: 30px;
+      bottom: -5px;
+    }
+    .candy {
+      bottom: -10px;
+      right: 50px;
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    section.games .games-wrapper .games-element-info .game-image {
+      margin-left: -80px;
+    }
+    section.banner .pirate {
+      left: -325px;
+    }
+    section.banner .gem {
+      display: none;
+    }
+    section.banner .cloud-left {
+      left: -155px;
+      top: -230px;
+    }
+    section.banner .cloud-right {
+      right: -170px;
+      top: -45px;
+    }
+    section.banner .stars-left {
+      left: 230px;
+      top: 210px;
+    }
+    section.banner .stars-right {
+      right: -10px;
+      top: 60px;
+    }
+    section.banner .gull {
+      right: 100px;
+      top: 340px;
+    }
+    section.banner .girl {
+      left: 220px;
+      bottom: -70px;
+    }
+    section.banner .grass-left {
+      left: 155px;
+      bottom: -35px;
+    }
+    section.banner .keks {
+      left: -40px;
+      bottom: -110px;
+    }
+    section.banner .blocks {
+      left: -170px;
+      bottom: -100px;
+    }
+    section.about .girl-and-baloon {
+      right: 0px;
+      bottom: -200px;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    section.games .games-wrapper .games-element-info .game-image {
+      margin-left: -50px;
+    }
+    section.games .games-wrapper .games-element-buttons-row .games-element-buttons-row-wrapper .button-row-element {
+      display: inline-block;
+      float: none;
+      vertical-align: bottom;
+    }
+    section.games .games-wrapper .games-element-buttons-row .games-element-buttons-row-wrapper .social-btns {
+      float: none;
+      display: block;
+      width: 100%;
+    }
+    section.games .games-wrapper .games-element-buttons-row .games-element-buttons-row-wrapper .market-btns {
+      float: none;
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+    }
+    section.games .games-wrapper .games-element-buttons-row .games-element-buttons-row-wrapper .market {
+      float: none;
+    }
+  }
+  @media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-bg {
+      height: 150%;
+    }
+    section.banner .pirate {
+      left: -425px;
+    }
+    section.banner .gem {
+      display: none;
+    }
+    section.banner .cloud-left {
+      left: -255px;
+      top: -230px;
+    }
+    section.banner .cloud-right {
+      right: -270px;
+      top: -45px;
+    }
+    section.banner .stars-left {
+      left: 100px;
+      top: 210px;
+    }
+    section.banner .stars-right {
+      right: -110px;
+      top: 60px;
+    }
+    section.banner .gull {
+      right: 10px;
+      top: 340px;
+    }
+    section.banner .girl {
+      left: 170px;
+      bottom: -70px;
+    }
+    section.banner .grass-left {
+      left: 55px;
+      bottom: -35px;
+    }
+    section.banner .keks {
+      left: -140px;
+      bottom: -110px;
+    }
+    section.banner .blocks {
+      left: -270px;
+      bottom: -100px;
+    }
+    section.about .girl-and-baloon {
+      right: -90px;
+      bottom: -320px;
+    }
+    section.games .games-wrapper .games-element-info .game-image {
+      margin-left: -70px;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .raspberry-jam section.about .yellow-heart {
+      display: none;
+    }
+    .raspberry-jam section.about .about-wrapper .about-photos .about-photos-wrapper .photo.big {
+      width: 100%;
+    }
+    .raspberry-jam section.about .about-wrapper .about-photos .about-photos-wrapper .photo.big a img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    section.games {
+      height: auto;
+      padding-bottom: 550px;
+      /* background: #2fb4e0 no-repeat; */
+    }
+    section.games .games-wrapper {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+    section.games .games-wrapper .games-element-info .game-caption {
+      width: 350px;
+      margin-left: -180px;
+    }
+    section.games .games-wrapper .games-element {
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+    section.contacts .contacts-wrapper {
+      margin-top: 0;
+      max-width: 90%;
+      padding: 0;
+    }
+    section.contacts .contacts-wrapper .contacts-element {
+      height: auto;
+      width: 100%;
+      margin-bottom: 30px;
+      float: none;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-bg {
+      display: none;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-content {
+      position: relative;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-icon {
+      float: left;
+      width: 80px;
+      margin-right: 30px;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-icon img {
+      max-width: 90%;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-mail {
+      margin-top: 10px;
+      text-align: left;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-header {
+      margin-top: 10px;
+      text-align: left;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-info {
+      margin-top: 10px;
+      text-align: left;
+    }
+    .girl {
+      display: none;
+    }
+    .candy {
+      display: none;
+    }
+    section.about {
+      padding: 0 0 50px 0;
+      background-size: auto 100%;
+    }
+    section.about h1.section-header.orange {
+      margin-top: 50px;
+    }
+    section.about .wafer {
+      display: none;
+    }
+    section.about .yellow-heart {
+      display: none;
+    }
+    section.about .about-wrapper .about-photos {
+      position: relative;
+      width: 100%;
+      height: 700px;
+    }
+    section.about .about-wrapper .about-text {
+      width: 100%;
+      max-width: 100%;
+      margin: 50px 0 0 0;
+    }
+    section.banner {
+      margin-top: 70px;
+      height: 550px;
+    }
+    section.banner .girl {
+      display: block;
+      left: -70px;
+      bottom: -110px;
+    }
+    section.banner .pirate {
+      display: none;
+    }
+    section.banner .gem {
+      display: none;
+    }
+    section.banner .cloud-left {
+      left: -315px;
+      top: -230px;
+    }
+    section.banner .cloud-right {
+      right: -270px;
+      top: -45px;
+    }
+    section.banner .stars-left {
+      left: -50px;
+      top: 210px;
+    }
+    section.banner .stars-right {
+      right: -210px;
+      top: 60px;
+    }
+    section.banner .gull {
+      display: none;
+    }
+    section.banner .grass-left {
+      left: -50px;
+      bottom: -65px;
+      z-index: 1;
+    }
+    section.banner .grass-right {
+      bottom: -35px;
+    }
+    section.banner .keks {
+      display: none;
+    }
+    section.banner .blocks {
+      display: none;
+    }
+    section.banner .case {
+      right: -105px;
+      bottom: -160px;
+    }
+    section.banner .banner-wrapper {
+      height: 550px;
+    }
+    section.banner .banner-text {
+      top: 50%;
+      height: 270px;
+      margin-top: -115px;
+    }
+    .section.about .girl-and-baloon {
+      display: none;
+    }
+    header {
+      height: auto;
+      position: absolute;
+      top: 0;
+      z-index: 999;
+    }
+    header a.logo {
+      margin: 20px 0 15px 25px;
+      width: 24%;
+    }
+    header a.mobile-menu-btn {
+      margin: 28px 25px 15px 0;
+      display: block;
+      width: 7%;
+      float: right;
+    }
+    header .buttons {
+      float: none;
+      clear: both;
+      overflow: hidden;
+      height: 0;
+    }
+    header .buttons ul.menu {
+      display: block;
+      float: none;
+      margin: 25px auto 20px;
+      text-align: center;
+    }
+    header .buttons ul.menu li.el {
+      display: block;
+      float: none;
+      padding: 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    header .buttons ul.menu li.el.last {
+      border: none;
+    }
+    header .buttons ul.menu li a {
+      padding: 5px 9px;
+      height: auto;
+    }
+    header.active {
+      box-shadow: 0 0 40px rgba(0, 83, 122, 0.4);
+    }
+    .raspberry-jam section.about {
+      padding-top: 50px;
+    }
+    .raspberry-jam section.contacts {
+      height: auto;
+    }
+    .raspberry-jam section.contacts .girl-and-baloon,
+    .raspberry-jam section.contacts .wafer {
+      background-size: 25%;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    section.banner .cloud-left {
+      display: none;
+    }
+    section.banner .cloud-right {
+      display: none;
+    }
+    section.banner .gull {
+      display: none;
+    }
+    section.banner .pirate {
+      display: none;
+    }
+    section.banner .keks {
+      display: none;
+    }
+    section.banner .case {
+      display: none;
+    }
+    section.banner .blocks {
+      display: none;
+    }
+    section.banner .girl {
+      display: none;
+    }
+    section.banner .stars-left {
+      display: none;
+    }
+    section.banner .stars-right {
+      display: none;
+    }
+    section.about .yellow-heart {
+      display: none;
+    }
+    section.about .girl-and-baloon {
+      display: none;
+    }
+    section.about .wafer {
+      display: none;
+    }
+    .girl {
+      display: none;
+    }
+    .candy {
+      display: none;
+    }
+    section.games .games-wrapper .games-element-info .game-image {
+      display: none;
+    }
+    section.games .games-wrapper .games-element-info .game-logo {
+      left: 50%;
+    }
+    section.games .games-wrapper .games-element-info .game-caption {
+      left: 50%;
+    }
+    section.games .games-wrapper .games-element-buttons-row .games-element-buttons-row-wrapper .market {
+      margin: 10px;
+    }
+    section.games .games-wrapper .games-element-buttons-row .games-element-buttons-row-wrapper .market:hover {
+      margin: 8px;
+    }
+  }
+  @media only screen and (min-width: 800px) and (max-width: 1000px) {
+    section.about .about-wrapper .about-photos {
+      position: relative;
+      width: 100%;
+      height: 600px;
+    }
+  }
+  @media only screen and (min-width: 600px) and (max-width: 800px) {
+    section.banner .pirate {
+      display: none;
+    }
+    section.banner .gem {
+      display: none;
+    }
+    section.banner .cloud-left {
+      display: block;
+      left: -325px;
+      top: -340px;
+    }
+    section.banner .cloud-right {
+      display: block;
+      right: -290px;
+      top: -45px;
+    }
+    section.banner .stars-left {
+      display: block;
+      left: -100px;
+      top: 210px;
+    }
+    section.banner .stars-right {
+      display: block;
+      right: -260px;
+      top: 60px;
+    }
+    section.banner .gull {
+      display: none;
+    }
+    section.banner .girl {
+      left: -170px;
+      bottom: -130px;
+      display: block;
+    }
+    section.banner .grass-left {
+      left: -100px;
+      bottom: -65px;
+      z-index: 1;
+    }
+    section.banner .grass-right {
+      bottom: -125px;
+      right: -120px;
+    }
+    section.banner .keks {
+      display: none;
+    }
+    section.banner .blocks {
+      display: none;
+    }
+    section.banner .case {
+      display: block;
+      right: -195px;
+      bottom: -180px;
+    }
+    section.about .about-wrapper .about-photos {
+      position: relative;
+      width: 100%;
+      height: 500px;
+    }
+    section.contacts .contacts-wrapper {
+      margin-top: 0;
+      max-width: 100%;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-icon {
+      display: none;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-info {
+      font-size: 0.8em;
+      padding-left: 0;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    section.banner .pirate {
+      display: none;
+    }
+    section.banner .gem {
+      display: none;
+    }
+    section.banner .cloud-left {
+      display: none;
+      left: -325px;
+      top: -370px;
+    }
+    section.banner .cloud-right {
+      display: none;
+      right: -290px;
+      top: -45px;
+    }
+    section.banner .stars-left {
+      display: block;
+      left: -130px;
+      top: 210px;
+    }
+    section.banner .stars-right {
+      display: block;
+      right: -300px;
+      top: 60px;
+    }
+    section.banner .gull {
+      display: block;
+      left: -100px;
+      top: 45px;
+    }
+    section.banner .girl {
+      left: -190px;
+      bottom: -160px;
+      display: block;
+    }
+    section.banner .grass-left {
+      left: -100px;
+      bottom: -65px;
+      z-index: 1;
+    }
+    section.banner .grass-right {
+      bottom: -50px;
+      right: -140px;
+    }
+    section.banner .keks {
+      display: none;
+    }
+    section.banner .blocks {
+      display: none;
+    }
+    section.banner .case {
+      display: block;
+      right: -255px;
+      bottom: -180px;
+    }
+    section.about .about-wrapper .about-photos {
+      position: relative;
+      width: 100%;
+      height: 400px;
+    }
+    section.contacts .contacts-wrapper {
+      margin-top: 0;
+      max-width: 100%;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-icon {
+      display: none;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-info {
+      padding-left: 0;
+    }
+  }
+  @media only screen and (max-device-width: 600px) {
+    .raspberry-jam .contacts {
+      height: 350px;
+    }
+  }
+  @media only screen and (max-device-width: 800px) {
+    header .buttons ul.menu {
+      margin-top: 25px;
+    }
+    header .buttons ul.menu li a {
+      font-size: 2em;
+      padding: 15px 10px;
+    }
+    header .buttons ul.menu li a:active {
+      color: #3e6372;
+    }
+    header .buttons ul.menu li a:hover {
+      color: #3e6372;
+      background: none;
+    }
+    header .buttons ul.menu li a.active {
+      color: #3e6372;
+    }
+    header .buttons ul.lang li a {
+      font-size: 2em;
+      height: auto;
+      width: auto;
+      padding: 25px 30px 15px 30px;
+    }
+    h1 {
+      font-size: 2.2em;
+    }
+    section.banner .banner-text {
+      width: 550px;
+      margin-left: -275px;
+      margin-top: -140px;
+    }
+    section.banner .banner-text p {
+      font-size: 1.3em;
+    }
+    section.about .about-wrapper .about-text {
+      font-size: 1.6em;
+    }
+    section.contacts {
+      padding-top: 50px;
+      background: url('./img/contacts-bg-slice-mob.png') 50% 0;
+    }
+    section.contacts .contacts-wrapper .contacts-element {
+      margin-top: 30px;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-icon {
+      display: none;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-mail {
+      font-size: 2.2em;
+      text-align: center;
+      margin-bottom: 0.5em;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-header {
+      font-size: 2em;
+      padding-left: 0;
+      line-height: 1em;
+      text-align: center;
+    }
+    section.contacts .contacts-wrapper .contacts-element .contacts-element-info {
+      font-size: 2em;
+      padding-left: 0;
+      line-height: 1em;
+      text-align: center;
+      display: none;
+    }
+    section.contacts .contacts-full-wrapper .footer {
+      padding-top: 25px;
+      background: transparent;
+    }
+    section.contacts .contacts-full-wrapper .footer .footer-wrapper {
+      width: 70%;
+    }
+    section.contacts .contacts-full-wrapper .footer .footer-wrapper p {
+      font-size: 1.5em;
+    }
+    section.footer .footer-wrapper {
+      width: 400px;
+    }
+    section.footer .footer-wrapper p {
+      font-size: 1em;
+    }
+    section.games .games-wrapper .games-element-info .game-logo {
+      width: 700px;
+      margin-top: 275px;
+      left: 50%;
+      margin-left: -350px;
+    }
+    section.games .games-wrapper .games-element-info .game-logo img.logo {
+      width: 60%;
+      margin: 0 auto;
+      left: -99999px;
+      right: -99999px;
+    }
+    section.games .games-wrapper .games-element-info .game-logo img.shine {
+      top: -150px;
+      width: 90%;
+      height: 180%;
+      margin: 0 auto;
+      left: -99999px;
+      right: -99999px;
+    }
+    section.games .games-wrapper .games-element-info .game-caption {
+      display: none;
+    }
+    section.games .games-wrapper .games-element-info .game-image {
+      margin-left: 0;
+      margin-bottom: -1px;
+      width: 100%;
+      transform: translate(0, 5%) scale(0.9);
+    }
+    section.games .games-wrapper .sb .games-element-info .game-logo {
+      width: 100%;
+      left: 0;
+      right: 0;
+      margin-left: 0;
+    }
+    section.games .games-wrapper .sb .games-element-info .game-logo img.logo {
+      width: 80%;
+      top: -70px;
+    }
+    section.games .games-wrapper .sb .games-element-info .game-logo img.shine {
+      height: 140px;
+      top: -100px;
+    }
+    section.games .games-wrapper .sb .games-element-buttons-row .games-element-buttons-row-wrapper {
+      padding-top: 100px;
+    }
+    section.games .games-wrapper .см .games-element-info .game-logo {
+      margin-top: 275px;
+    }
+    section.games .games-wrapper .rj .games-element-info .game-logo {
+      margin-top: 290px;
+    }
+    section.games .games-wrapper .games-element-buttons-row .games-element-buttons-row-wrapper {
+      padding-top: 110px;
+    }
+    section.games .games-wrapper .games-element-buttons-row .games-element-buttons-row-wrapper .span {
+      font-size: 2em;
+      height: 80px;
+      line-height: 80px;
+      margin: 15px 10px;
+      display: none;
+    }
+    section.games .games-wrapper .games-element-buttons-row .games-element-buttons-row-wrapper .social {
+      width: 80px;
+      height: 80px;
+      margin: 15px 10px;
+    }
+    section.games .games-wrapper .games-element-buttons-row .games-element-buttons-row-wrapper .social:hover {
+      width: 80px;
+      height: 80px;
+      margin: 15px 10px;
+    }
+    section.games .games-wrapper .games-element-buttons-row .games-element-buttons-row-wrapper .market {
+      width: 300px;
+      height: 80px;
+      margin: 15px 10px;
+    }
+    section.games .games-wrapper .games-element-buttons-row .games-element-buttons-row-wrapper .market:hover {
+      width: 300px;
+      height: 80px;
+      margin: 15px 10px;
+    }
+    ul.social-icons li a {
+      display: block;
+      background: url('./img/social-icons.png');
+      width: 80px;
+      height: 80px;
+      background-size: 160px auto;
+      margin: 3px;
+      border-radius: 50%;
+      transition: transform 0.25s ease;
+    }
+    ul.social-icons li a:hover {
+      transform: scale(1.1);
+    }
+    ul.social-icons li a.vk {
+      background-position: -80px 0;
+    }
+    ul.social-icons li a.vk:hover {
+      background-position: 0 0;
+    }
+    ul.social-icons li a.fb {
+      background-position: -80px -80px;
+    }
+    ul.social-icons li a.fb:hover {
+      background-position: 0 -80px;
+    }
+    ul.social-icons li a.lin {
+      background-position: -80px -160px;
+    }
+    ul.social-icons li a.lin:hover {
+      background-position: 0 -160px;
+    }
+    ul.social-icons li a.ok {
+      background-position: -80px -240px;
+    }
+    ul.social-icons li a.ok:hover {
+      background-position: 0 -240px;
+    }
+    ul.social-icons li a.inst {
+      background-position: -80px -320px;
+    }
+    ul.social-icons li a.inst:hover {
+      background-position: 0 -320px;
+    }
+    ul.social-icons li a.am {
+      background-position: -80px -400px;
+    }
+    ul.social-icons li a.am:hover {
+      background-position: 0 -400px;
+    }
+  }
+  .slick-list {
+    padding-top: 165px;
+  }
+  .only-mob {
+    display: block !important;
+  }
+  .only-desc {
+    display: none !important;
+  }
+
+  .privacy-wrapper header,
+  .terms-of-service-wrapper header {
+    background-color: #f4f4f4;
+  }
+  .privacy-wrapper header.active,
+  .terms-of-service-wrapper header.active {
+    box-shadow: inset 0 -2em 2em #f4f4f4;
+  }
+  .privacy-wrapper .section.contacts,
+  .terms-of-service-wrapper .section.contacts {
+    background: none;
+  }
+  .privacy-wrapper .section.contacts:after,
+  .terms-of-service-wrapper .section.contacts:after {
+    position: absolute;
+    top: -62px;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 2560px;
+    border-color: transparent transparent #fff transparent;
+  }
+  .privacy-wrapper .section.contacts .footer .logo,
+  .terms-of-service-wrapper .section.contacts .footer .logo,
+  .privacy-wrapper .section.contacts .footer .social-icons,
+  .terms-of-service-wrapper .section.contacts .footer .social-icons {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .privacy-wrapper .section.contacts .footer .logo,
+  .terms-of-service-wrapper .section.contacts .footer .logo {
+    margin: 20px 0 15px 0;
+    width: 8em;
+  }
+  .privacy-wrapper .section.contacts .footer .logo img,
+  .terms-of-service-wrapper .section.contacts .footer .logo img {
+    width: 100%;
+    height: auto;
+  }
+  .privacy-wrapper .section.contacts .footer .social-icons,
+  .terms-of-service-wrapper .section.contacts .footer .social-icons {
+    margin-top: 0;
+  }
+  .privacy-content,
+  .terms-of-service-content {
+    margin-bottom: 4em;
+    padding: 4em;
+    text-align: left;
+    background-color: #f4f4f4;
+  }
+  @media screen and (max-width: 1000px) {
+    .privacy-content,
+    .terms-of-service-content {
+      margin-top: 4em;
+    }
+  }
+  .privacy-content h3,
+  .terms-of-service-content h3,
+  .privacy-content h4,
+  .terms-of-service-content h4 {
+    font-family: 'Intro Bold', sans-serif;
+    margin: 0.2em 0;
+    font-size: 1em;
+  }
+  .privacy-content ul,
+  .terms-of-service-content ul {
+    margin: 0.5em;
+    margin-right: 0;
+    list-style: inside;
+  }
+  .privacy-content a,
+  .terms-of-service-content a {
+    color: #165e73;
+  }
+  .privacy-content a:hover,
+  .terms-of-service-content a:hover {
+    color: #123e4f;
+    text-decoration: underline;
+  }
+
+  .privacy-content .image-beaver,
+  .terms-of-service-content .image-beaver {
+    width: 12em;
+    height: 12em;
+    float: right;
+    background: url("./img/privacyBeaver.png") no-repeat 50% transparent;
+    background-size: contain;
+  }
+  @media screen and (max-device-width: 420px) {
+    .privacy-content .image-beaver,
+    .terms-of-service-content .image-beaver {
+      display: none;
+    }
+  }
+
+  td {
+    border: 1px solid #000;
+    padding: 0.2em;
+    text-align: center;
+  }
+
+  p {
+    padding: 0.5em 0;
+  }
+
+  h1 {
+    font: 1.7em 'Bubbleboddy Neue Trial', Arial, Tahoma, sans-serif;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .privacy-update {
+    font-size: 0.7em;
+    font-style: italic;
+  }
+
+  address {
+    margin-bottom: 0.8em;
+  }
+
+  .hidden-link {
+    cursor: pointer;
+  }
+
+  .hidden-text {
+    display: none;
+  }
+
+  .hidden-link.active~.hidden-text {
+    display: inline;
+  }
+
+  table {
+    margin: 0.5em 0;
+  }
+
+  ol {
+    list-style: none;
+  }
