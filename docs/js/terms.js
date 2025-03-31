@@ -1,3 +1,10 @@
-const hiddelLinks = document.querySelectorAll('.hidden-link');
+document.addEventListener('click', (evt) => {
+    toggleHiddenText(evt);
+});
 
-hiddelLinks.forEach(link => link.addEventListener('click', (evt) => evt.target.classList.toggle('active')));
+const toggleHiddenText = (evt) => {
+    const hasClass = (className) => evt.target.classList.contains(className);
+
+    document.querySelectorAll('.hidden-link').forEach(hiddenLink => !hasClass('hidden-text') && hiddenLink.classList.remove('active'));
+    hasClass('hidden-link') && evt.target.classList.add('active');
+};
