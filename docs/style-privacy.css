@@ -1488,6 +1488,7 @@
   .hidden-link {
     cursor: pointer;
     font-style: italic;
+    color: #165e73;
   }
 
   .hidden-text {
