@@ -1,28 +1,28 @@
 @font-face {
     font-family: 'Bubbleboddy Neue Trial';
-    src: url('../fonts/bn-regular.woff') format('woff');
+    src: url('fonts/bn-regular.woff') format('woff');
     font-weight: normal;
   }
   @font-face {
     font-family: 'Bubbleboddy Neue Trial';
-    src: url('../fonts/bn-bold.woff') format('woff');
+    src: url('fonts/bn-bold.woff') format('woff');
     font-weight: bold;
   }
   @font-face {
     font-family: 'Intro Bold';
-    src: url('../fonts/intro-bold.woff') format('woff');
+    src: url('fonts/intro-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
     font-family: 'Intro Black';
-    src: url('../fonts/intro-black.woff') format('woff');
+    src: url('fonts/intro-black.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
     font-family: 'Intro Regular';
-    src: url('../fonts/intro-regular.woff') format('woff');
+    src: url('fonts/intro-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
